@@ -4,11 +4,7 @@ import pluginVue from 'eslint-plugin-vue'
 export default [
   {
     name: 'app/files-to-lint',
-    files: ['**/*.{js,mjs,jsx,vue}'],
-    rules: {
-      semi: ["error", "always"],
-      quotes: ["error", "double"]
-    }
+    files: ['**/*.{js,mjs,jsx,vue}']
   },
   {
     name: 'app/files-to-ignore',
