@@ -6,9 +6,12 @@
   padding: 0;
   font-weight: normal;
 }
+h2{
+  text-decoration: underline solid #C35817;
+  text-underline-offset: 8px;
+}
 body {
   font-family: 'Arial', sans-serif;
   color: white;
   background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
 }
-
