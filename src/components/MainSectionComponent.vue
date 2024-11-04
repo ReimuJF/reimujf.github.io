@@ -1,25 +1,21 @@
+<script setup>
+const props = defineProps(["locale"])</script>
+
 <template>
     <main class="main">
         <div class="main-container">
             <div class="title">
-                <h2 class="main-title">Привет, я Вячеслав!</h2>
-                <p class="main-subtitle">Frontend-разработчик</p>
+                <h2 class="main-title">{{ props.locale.main_title }}</h2>
+                <p class="main-subtitle">{{ props.locale.main_subtitle }}</p>
             </div>
             <div class="img-container">
-                <img src="../assets/images/profile-photo.jpg" alt="Моё Фото" class="profile-photo">
+                <img src="../assets/images/profile-photo.jpg" :alt="props.locale.photo_attribute" class="profile-photo">
             </div>
         </div>
         <div class="about-me">
             <div class="about-container">
-                <h2 class="about-title">Обо мне</h2>
-                <p class="about-text">Frontend-разработчик с опытом создания веб-приложений, ориентированных на
-                    пользовательский интерфейс.
-                    Обладаю глубокими знаниями в HTML, CSS, JavaScript и фреймворке Vue.js. Успешно реализовывал проекты
-                    с
-                    акцентом на улучшение производительности и удобства использования. В работе стремлюсь к чистому и
-                    поддерживаемому коду, активно применяя современные инструменты разработки и лучшие практики.
-                    Постоянно
-                    развиваюсь и интересуюсь новыми технологиями в области веб-разработки.
+                <h2 class="about-title">{{ props.locale.about_me_title }}</h2>
+                <p class="about-text">{{ props.locale.about_me_text }}
                 </p>
             </div>
         </div>
