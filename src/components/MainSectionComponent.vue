@@ -1,5 +1,7 @@
 <script setup>
-const props = defineProps(["locale"])</script>
+const props = defineProps(["locale"]);
+
+</script>
 
 <template>
     <main class="main">

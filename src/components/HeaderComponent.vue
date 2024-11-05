@@ -7,15 +7,16 @@ const emitLanguage = (event) => {
     language.value = event.target.getAttribute("data");
     emit("lang", language.value);
 }
+
 </script>
 
 <template>
     <header>
-
         <div class="header-container">
             <div class="links-container">
-                <a href="#projects" class="link">{{ props.locale.projects }}</a>
-                <a href="#" class="link">{{ props.locale.contacts }}</a>
+                <router-link to="/" class="link">{{ props.locale.main }}</router-link>
+                <router-link :to="{path: '/', hash: '#projects'}" class="link">{{ props.locale.projects }}</router-link>
+                <router-link to="/contacts" class="link">{{ props.locale.contacts }}</router-link>
             </div>
             <span>{{ props.locale.language }}</span>
             <div class="dropdown">
@@ -61,7 +62,6 @@ const emitLanguage = (event) => {
 
 .dropbtn {
     background-color: #4CAF50;
-    /* Зеленый цвет */
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -79,6 +79,7 @@ const emitLanguage = (event) => {
     right: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    cursor: pointer;
 }
 
 .dropdown:hover .dropdown-content {
@@ -94,13 +95,6 @@ const emitLanguage = (event) => {
 
 .lang:hover {
     background-color: #f1f1f1;
-    /* Цвет при наведении */
 }
 
-/* .header-container {
-    padding: 5px 20px;
-    display: flex;
-    flex-direction: row;
-
-} */
 </style>

@@ -6,6 +6,10 @@
   padding: 0;
   font-weight: normal;
 }
+.todo{
+  color: red;
+  text-decoration: none;
+}
 h2{
   text-decoration: underline solid #C35817;
   text-underline-offset: 8px;

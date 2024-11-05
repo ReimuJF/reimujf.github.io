@@ -1,10 +1,8 @@
 <script setup>
 import { ref } from "vue"
-import MainSection from "./components/MainSectionComponent.vue";
-import Header from "./components/HeaderComponent.vue"
-import Projects from "./components/ProjectsComponent.vue";
+import Header from './components/HeaderComponent.vue';
 import { localeText } from "./scipts/locale.js"
-const language = ref("en");
+const language = ref("ru");
 
 function updateLanguage(lang) {
   if (localeText[lang]) {
@@ -15,9 +13,10 @@ function updateLanguage(lang) {
 
 <template>
   <Header :locale="localeText[language]" @lang="updateLanguage" />
-  <MainSection :locale="localeText[language]" />
-  <Projects />
+  <RouterView :locale="localeText[language]"></RouterView>
 </template>
+
+
 
 <style scoped>
 Header {
