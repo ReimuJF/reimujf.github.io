@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from "vue"
 import Header from './components/HeaderComponent.vue';
-import { localeText } from "./scipts/locale.js"
+import { localeText } from "./scipts/locale.js";
+import Footer from "./components/FooterComponent.vue";
 const language = ref("ru");
 
 function updateLanguage(lang) {
@@ -13,7 +14,8 @@ function updateLanguage(lang) {
 
 <template>
   <Header :locale="localeText[language]" @lang="updateLanguage" />
-  <RouterView :locale="localeText[language]"></RouterView>
+  <RouterView :locale="localeText[language]" :language="language"></RouterView>
+  <Footer />
 </template>
 
 

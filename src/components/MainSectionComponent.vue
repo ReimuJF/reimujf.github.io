@@ -17,23 +17,23 @@ const tecs = [
 </script>
 
 <template>
-    <main class="main">
+    <main class="main main-bottom30">
         <div class="main-container">
             <div class="title">
-                <h2 class="main-title">{{ props.locale.main_title }}</h2>
-                <p class="main-subtitle">{{ props.locale.main_subtitle }}</p>
+                <h2 class="main-title largest-font-size">{{ props.locale.main_title }}</h2>
+                <p class="main-subtitle big-font-size">{{ props.locale.main_subtitle }}</p>
             </div>
             <div class="img-container">
                 <img src="../assets/images/profile-photo.jpg" :alt="props.locale.photo_attribute" class="profile-photo">
             </div>
         </div>
         <div class="about-me">
-            <div class="about-container">
-                <h2 class="about-title">{{ props.locale.about_me_title }}</h2>
-                <p class="about-text">{{ props.locale.about_me_text }}
+            <div class="about-container margin-bottom30">
+                <h2 class="about-title big-font-size">{{ props.locale.about_me_title }}</h2>
+                <p class="about-text regular-font-size">{{ props.locale.about_me_text }}
                 </p>
             </div>
-            <h2 class="about-title">{{ props.locale.tecs }}</h2>
+            <h2 class="about-title big-font-size">{{ props.locale.tecs }}</h2>
             <div class="tecs-container">
                 <TechItem v-for="item in tecs" :key="item">
                     <component class="logo" :is="defineAsyncComponent(() => import(`./logos/${item}Component.vue`))" />
@@ -47,22 +47,16 @@ const tecs = [
 </template>
 
 <style scoped>
-.main {
-    margin-bottom: 30px;
-}
-
 .title {
     flex-basis: 50%;
 }
 
 .main-title {
-    font-size: clamp(2rem, 4vw, 4.5rem);
     font-weight: 700;
     margin-bottom: 15px;
 }
 
 .main-subtitle {
-    font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 500;
 }
 
@@ -92,12 +86,10 @@ const tecs = [
 
 .about-container {
     padding: 16px;
-    margin-bottom: 20px;
 }
 
 .about-title {
     text-align: center;
-    font-size: clamp(1.5rem, 4vw, 3rem);
     margin-bottom: 16px;
     text-align: center;
 }
@@ -108,7 +100,7 @@ const tecs = [
 }
 
 .about-text {
-    font-size: clamp(1.125rem, 2vw, 1.25rem);
+
     text-align: justify;
     line-height: 1.5;
 }
@@ -125,7 +117,6 @@ const tecs = [
     .main-container {
         flex-direction: column;
         align-items: stretch;
-
     }
 
     .profile-photo {
@@ -133,7 +124,6 @@ const tecs = [
     }
 
     .tecs-container {
-
         gap: 42px;
         grid-template-columns: repeat(3, 1fr);
     }

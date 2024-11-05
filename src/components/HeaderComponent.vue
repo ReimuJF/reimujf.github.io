@@ -13,12 +13,12 @@ const emitLanguage = (event) => {
 <template>
     <header>
         <div class="header-container">
-            <div class="links-container">
+            <div class="links-container smaller-font-size">
                 <router-link to="/" class="link">{{ props.locale.main }}</router-link>
                 <router-link :to="{path: '/', hash: '#projects'}" class="link">{{ props.locale.projects }}</router-link>
                 <router-link to="/contacts" class="link">{{ props.locale.contacts }}</router-link>
             </div>
-            <span class="lang-label">{{ props.locale.language }}</span>
+            <span class="lang-label regular-font-size">{{ props.locale.language }}</span>
             <div class="dropdown">
                 <button class="dropbtn">{{ language }}</button>
                 <div class="dropdown-content">
@@ -36,11 +36,11 @@ const emitLanguage = (event) => {
     display: inline-flex;
     gap: 16px;
     text-align: left;
-    flex-basis: 75%;
+    flex-basis: 73%;
 }
 .link {
     color: white;
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    
     text-decoration: none;
 }
 
@@ -53,9 +53,6 @@ const emitLanguage = (event) => {
     padding-right: 30px;
     gap: 15px;
 
-}
-.lang-label{
-    font-size: clamp(0.9rem, 2vw, 1.2rem)
 }
 .dropdown {
     position: relative;
