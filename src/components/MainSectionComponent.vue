@@ -1,5 +1,17 @@
 <script setup>
+import TechItem from "./TechItemComponent.vue";
 const props = defineProps(["locale"]);
+const tecs = [
+    "javascript",
+    "html5",
+    "css3",
+    "angular",
+    "vuejs",
+    "python",
+    "mysql",
+    "git",
+    "vscode",
+]
 
 </script>
 
@@ -19,6 +31,13 @@ const props = defineProps(["locale"]);
                 <h2 class="about-title">{{ props.locale.about_me_title }}</h2>
                 <p class="about-text">{{ props.locale.about_me_text }}
                 </p>
+            </div>
+            <h2 class="about-title">{{ props.locale.tecs }}</h2>
+            <div class="tecs-container">
+                <TechItem v-for="item in tecs" :key="item"> 
+                        <img :src="`./src/assets/images/${item}.svg`" :alt="item + '_logo'" loading="lazy" class="logo">
+                        <p>{{item}}</p>
+                </TechItem>
             </div>
         </div>
     </main>
@@ -72,6 +91,7 @@ const props = defineProps(["locale"]);
 
 .about-container {
     padding: 16px;
+    margin-bottom: 20px;
 }
 
 .about-title {
@@ -92,6 +112,14 @@ const props = defineProps(["locale"]);
     line-height: 1.5;
 }
 
+.tecs-container {
+    margin: 32px auto;
+    display: grid;
+    gap: 48px;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
 @media screen and (max-width: 768px) {
     .main-container {
         flex-direction: column;
@@ -102,5 +130,12 @@ const props = defineProps(["locale"]);
     .profile-photo {
         width: 100%;
     }
+
+    .tecs-container {
+
+    gap: 42px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 }
 </style>

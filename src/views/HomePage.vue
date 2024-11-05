@@ -5,6 +5,12 @@ const props = defineProps(["locale"]);
 </script>
 
 <template>
-    <MainSection :locale="props.locale" />
+    <MainSection :locale="props.locale" class="main"/>
     <Projects />
 </template>
+
+<style scoped>
+.main {
+    margin-bottom: 40px;
+}
+</style>
