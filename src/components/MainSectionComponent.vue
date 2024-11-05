@@ -1,17 +1,18 @@
 <script setup>
 import TechItem from "./TechItemComponent.vue";
+import { defineAsyncComponent } from "vue";
 const props = defineProps(["locale"]);
 const tecs = [
-    "javascript",
-    "html5",
-    "css3",
-    "angular",
-    "vuejs",
-    "python",
-    "mysql",
-    "git",
-    "vscode",
-]
+    "Javascript",
+    "Html5",
+    "Css3",
+    "Angular",
+    "Vuejs",
+    "Python",
+    "Mysql",
+    "Git",
+    "Vscode",
+];
 
 </script>
 
@@ -34,9 +35,9 @@ const tecs = [
             </div>
             <h2 class="about-title">{{ props.locale.tecs }}</h2>
             <div class="tecs-container">
-                <TechItem v-for="item in tecs" :key="item"> 
-                        <img :src="`./src/assets/images/${item}.svg`" :alt="item + '_logo'" loading="lazy" class="logo">
-                        <p>{{item}}</p>
+                <TechItem v-for="item in tecs" :key="item">
+                    <component class="logo" :is="defineAsyncComponent(() => import(`./logos/${item}Component.vue`))" />
+                    <p>{{ item }}</p>
                 </TechItem>
             </div>
         </div>
@@ -115,7 +116,7 @@ const tecs = [
 .tecs-container {
     margin: 32px auto;
     display: grid;
-    gap: 48px;
+    gap: 24px;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
 }
@@ -133,9 +134,9 @@ const tecs = [
 
     .tecs-container {
 
-    gap: 42px;
-    grid-template-columns: repeat(3, 1fr);
-}
+        gap: 42px;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
 }
 </style>

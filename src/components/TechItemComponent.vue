@@ -12,9 +12,8 @@
     text-align: center;
     align-items: center;
     font-size: clamp(1.125rem, 2vw, 2rem);
-    height: 64px;
-    width: 64px;
-
+    height: 80px;
+    width: 80px;
 }
 
 </style>

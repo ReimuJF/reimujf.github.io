@@ -8,6 +8,9 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  build: {
+    assetsInlineLimit: Number.MAX_SAFE_INTEGER,
+  },
   base: "/",
   resolve: {
     alias: {
