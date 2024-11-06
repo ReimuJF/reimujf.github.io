@@ -18,7 +18,7 @@ const tecs = [
 
 <template>
     <main class="main main-bottom30">
-        <div class="main-container">
+        <div class="main-container max-width">
             <div class="title">
                 <h2 class="main-title largest-font-size">{{ props.Locale.main_title }}</h2>
                 <p class="main-subtitle big-font-size">{{ props.Locale.main_subtitle }}</p>
@@ -27,7 +27,7 @@ const tecs = [
                 <img src="../assets/images/profile-photo.jpg" :alt="props.Locale.photo_attribute" class="profile-photo">
             </div>
         </div>
-        <div class="about-me">
+        <div class="about-me max-width">
             <div class="about-container margin-bottom30">
                 <h2 class="about-title big-font-size">{{ props.Locale.about_me_title }}</h2>
                 <p class="about-text regular-font-size">{{ props.Locale.about_me_text }}
@@ -66,7 +66,6 @@ const tecs = [
     align-items: center;
     gap: 24px;
     padding: 0 16px;
-    max-width: 1440px;
     margin: 0 auto 0;
     margin-bottom: 50px;
 }
@@ -95,7 +94,6 @@ const tecs = [
 }
 
 .about-me {
-    max-width: 1440px;
     margin: 0 auto 0;
 }
 

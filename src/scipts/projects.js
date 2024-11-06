@@ -63,7 +63,7 @@ export const projects = [
         title: "Simple Template Page",
         url: "https://github.com/ReimuJF/simple-template-site",
         img: "/projects_screenshots/simple_template.png",
-        livePage: "http://reimujf.github.io/space-pong/",
+        livePage: "https://reimujf.github.io/simple-template-site/",
         technologies: ["Html5", "Css3"],
         localesDescription: {
             ru: {

@@ -6,8 +6,8 @@ const props = defineProps(["Locale", "language"]);
 </script>
 
 <template>
-    <div class="projects-container" id="projects">
-        <h2 class="big-font-size">Мои проекты</h2>
+    <div class="projects-container " id="projects">
+        <h2 class="big-font-size">{{ props.Locale.big_projects }}</h2>
         <div class="projects-grid-table">
             <ProjectPreview class="project" v-for="(project, index) in projects" :key="project" :lang="language">
                 <template v-slot:image-slot><img :src="project.img" :alt="project.img" class="preview-screenshot"

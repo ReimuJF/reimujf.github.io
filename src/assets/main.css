@@ -20,6 +20,7 @@ h2 {
 }
 
 body {
+  min-height: 100vh;
   font-family: 'Arial', sans-serif;
   color: white;
   background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
@@ -40,7 +41,9 @@ body {
 .big-font-size {
   font-size: clamp(1.5rem, 4vw, 3rem);
 }
-
+.max-width {
+  max-width: 1440px;
+}
 .margin-bottom30 {
   margin-bottom: 30px;
 }
@@ -76,4 +79,9 @@ body {
   border: 3px solid rgba(76, 175, 80, 0.38);
   padding: 10px;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(72, 163, 75, 0.653);
 }

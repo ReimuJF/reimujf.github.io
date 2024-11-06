@@ -16,7 +16,11 @@ a:visited {
     color: white;
     text-decoration: none;
 }
-
+footer{
+    position: relative;
+    left: auto;
+    bottom: 0;
+}
 .flex-link {
     position: relative;
     display: flex;

@@ -16,7 +16,7 @@ const emitLanguage = (event) => {
             <div class="links-container smaller-font-size">
                 <router-link to="/" class="link">{{ props.locale.main }}</router-link>
                 <router-link :to="{path: '/', hash: '#projects'}" class="link">{{ props.locale.projects }}</router-link>
-                <router-link to="/contacts" class="link">{{ props.locale.contacts }}</router-link>
+                <router-link to="/contacts" class="link" :locale="props.locale">{{ props.locale.contacts }}</router-link>
             </div>
             <span class="lang-label regular-font-size">{{ props.locale.language }}</span>
             <div class="dropdown">

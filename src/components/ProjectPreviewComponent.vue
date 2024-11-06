@@ -42,7 +42,4 @@
     width: 550px;
 }
 
-.project button:hover {
-    background: rgba(72, 163, 75, 0.653);
-}
 </style>
