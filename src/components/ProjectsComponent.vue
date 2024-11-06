@@ -13,7 +13,7 @@ const props = defineProps(["locale", "language"]);
         <h2 class="big-font-size">Мои проекты</h2>
         <div class="projects-grid-table">
             <ProjectPreview class="project" v-for="project in projects" :key="project">
-                <template v-slot:image-slot><img :src="project.img" :alt="project.img" class="preview-screenshot"></template>
+                <template v-slot:image-slot><img :src="project.img" :alt="project.img" class="preview-screenshot" loading="lazy"></template>
                 <p class="big-font-size">
                     {{ project.title }}
                 </p>
