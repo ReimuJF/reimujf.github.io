@@ -1,7 +1,7 @@
 <script setup>
 import TechItem from "./TechItemComponent.vue";
 import { defineAsyncComponent } from "vue";
-const props = defineProps(["locale"]);
+const props = defineProps(["Locale"]);
 const tecs = [
     "Javascript",
     "Html5",
@@ -20,20 +20,20 @@ const tecs = [
     <main class="main main-bottom30">
         <div class="main-container">
             <div class="title">
-                <h2 class="main-title largest-font-size">{{ props.locale.main_title }}</h2>
-                <p class="main-subtitle big-font-size">{{ props.locale.main_subtitle }}</p>
+                <h2 class="main-title largest-font-size">{{ props.Locale.main_title }}</h2>
+                <p class="main-subtitle big-font-size">{{ props.Locale.main_subtitle }}</p>
             </div>
             <div class="img-container">
-                <img src="../assets/images/profile-photo.jpg" :alt="props.locale.photo_attribute" class="profile-photo">
+                <img src="../assets/images/profile-photo.jpg" :alt="props.Locale.photo_attribute" class="profile-photo">
             </div>
         </div>
         <div class="about-me">
             <div class="about-container margin-bottom30">
-                <h2 class="about-title big-font-size">{{ props.locale.about_me_title }}</h2>
-                <p class="about-text regular-font-size">{{ props.locale.about_me_text }}
+                <h2 class="about-title big-font-size">{{ props.Locale.about_me_title }}</h2>
+                <p class="about-text regular-font-size">{{ props.Locale.about_me_text }}
                 </p>
             </div>
-            <h2 class="about-title big-font-size">{{ props.locale.tecs }}</h2>
+            <h2 class="about-title big-font-size">{{ props.Locale.tecs }}</h2>
             <div class="tecs-container">
                 <TechItem v-for="item in tecs" :key="item">
                     <component class="logo" :is="defineAsyncComponent(() => import(`./logos/${item}Component.vue`))" />

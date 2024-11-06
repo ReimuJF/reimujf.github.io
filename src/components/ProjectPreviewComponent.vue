@@ -1,3 +1,6 @@
+<script setup>
+
+</script>
 <template>
     <div class="project">
         <div class="screenshot-container">
@@ -7,9 +10,7 @@
         <div class="tec-containter">
             <slot name="tecs-content"></slot>
         </div>
-        <button class="regular-font-size">
-            <slot name="button-label"></slot>
-        </button>
+        <slot name="button-slot"></slot>
     </div>
 </template>
 
@@ -34,17 +35,6 @@
     align-items: flex-end;
     margin-bottom: 15px;
     gap: 5px;
-}
-
-.project button {
-    background: rgba(76, 175, 80, 0.95);
-    color: #f9f9f9;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.7px);
-    -webkit-backdrop-filter: blur(9.7px);
-    border: 3px solid rgba(76, 175, 80, 0.38);
-    padding: 10px;
-    margin-bottom: 20px;
 }
 
 .screenshot-container {

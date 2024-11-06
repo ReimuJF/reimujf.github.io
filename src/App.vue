@@ -14,7 +14,7 @@ function updateLanguage(lang) {
 
 <template>
   <Header :locale="localeText[language]" @lang="updateLanguage" />
-  <RouterView :locale="localeText[language]" :language="language"></RouterView>
+  <RouterView :Locale="localeText[language]" :language="language"></RouterView>
   <Footer />
 </template>
 

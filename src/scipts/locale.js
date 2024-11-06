@@ -12,6 +12,9 @@ export const localeText = {
         tecs: "Мои технологии",
         view: "Подробнее",
         made_with: "Сделано с:",
+        back: "Назад",
+        repo: "Открыть репозиторий",
+        live: "Перейти на страницу",
     },
     en: {
         main: "Main",
@@ -26,6 +29,9 @@ export const localeText = {
         tecs: "My Tech Stack",
         view: "Read More",
         made_with: "Made with:",
+        back: "Back",
+        repo: "Open Repository",
+        live: "Go on Live Page",
     }
 
 };

@@ -3,14 +3,14 @@ export const projects = [
         title: "Vue TODO List",
         url: "https://github.com/ReimuJF/vue-todo-list",
         img: "/projects_screenshots/vue_todo_list.png",
-        livePage: "http://reimujf.github.io/vue_todo_list/",
+        livePage: "http://reimujf.github.io/vue-todo-list/",
         technologies: ["Javascript", "Vuejs", "Html5", "Css3"],
         localesDescription: {
             ru: {
-                desciption: "Проект представляет собой простое приложение для управления задачами, созданное с использованием фреймворка Vue.js. Приложение позволяет пользователям добавлять, удалять и отмечать задачи как выполненные, предоставляя удобный интерфейс для управления повседневными делами"
+                description: "Проект представляет собой простое приложение для управления задачами, созданное с использованием фреймворка Vue.js. Приложение позволяет пользователям добавлять, удалять и отмечать задачи как выполненные, предоставляя удобный интерфейс для управления повседневными делами"
             },
             en: {
-                desciption: "The project is a simple task management application built using the Vue.js framework. The application allows users to add, delete and mark tasks as completed, providing a convenient interface for managing daily tasks."
+                description: "The project is a simple task management application built using the Vue.js framework. The application allows users to add, delete and mark tasks as completed, providing a convenient interface for managing daily tasks."
             }
         },
     },
@@ -22,10 +22,10 @@ export const projects = [
         technologies: ["Javascript", "Html5", "Css3"],
         localesDescription: {
             ru: {
-                desciption: "Проект представляет собой простой калькулятор, созданный с использованием HTML, CSS и JavaScript. Проект предназначен для выполнения базовых арифметических операций с удобным пользовательским интерфейсом. Дизайн вдохновлен калькулятором Casio"
+                description: "Проект представляет собой простой калькулятор, созданный с использованием HTML, CSS и JavaScript. Проект предназначен для выполнения базовых арифметических операций с удобным пользовательским интерфейсом. Дизайн вдохновлен калькулятором Casio"
             },
             en: {
-                desciption: "The project is a simple calculator created using HTML, CSS and JavaScript. The project is designed to perform basic arithmetic operations with a user-friendly interface. The design is inspired by the Casio calculator"
+                description: "The project is a simple calculator created using HTML, CSS and JavaScript. The project is designed to perform basic arithmetic operations with a user-friendly interface. The design is inspired by the Casio calculator"
             }
         },
     },
@@ -37,10 +37,10 @@ export const projects = [
         technologies: ["Typescript", "Angular", "Html5", "Css3"],
         localesDescription: {
             ru: {
-                desciption: "Проект представляет собой веб-приложение для заказа бургеров, созданное с использованием фреймворка Angular. Приложение позволяет пользователям выбирать бургеры, добавлять их в корзину и оформлять заказ."
+                description: "Проект представляет собой веб-приложение для заказа бургеров, созданное с использованием фреймворка Angular. Приложение позволяет пользователям выбирать бургеры, добавлять их в корзину и оформлять заказ."
             },
             en: {
-                desciption: "The project is a web application for ordering burgers, created using the Angular framework. The application allows users to select burgers, add them to the cart and place an order."
+                description: "The project is a web application for ordering burgers, created using the Angular framework. The application allows users to select burgers, add them to the cart and place an order."
             }
         },
     },
@@ -52,10 +52,10 @@ export const projects = [
         technologies: ["Typescript", "Angular", "Html5", "Css3"],
         localesDescription: {
             ru: {
-                desciption: "Проект представляет собой приложение для заметок, созданное с использованием фреймворка Angular. Приложение позволяет пользователям создавать, редактировать и удалять заметки, предоставляя удобный интерфейс для управления информацией."
+                description: "Проект представляет собой приложение для заметок, созданное с использованием фреймворка Angular. Приложение позволяет пользователям создавать, редактировать и удалять заметки, предоставляя удобный интерфейс для управления информацией."
             },
             en: {
-                desciption: "The project is a note-taking application built using the Angular framework. The application allows users to create, edit, and delete notes, providing a convenient interface for managing information."
+                description: "The project is a note-taking application built using the Angular framework. The application allows users to create, edit, and delete notes, providing a convenient interface for managing information."
             }
         },
     },
@@ -67,10 +67,10 @@ export const projects = [
         technologies: ["Html5", "Css3"],
         localesDescription: {
             ru: {
-                desciption: "Проект представляет собой простой шаблонный сайт, созданный с использованием HTML и CSS. Проект предназначен для демонстрации базовой структуры и стилей веб-страницы, что может быть полезно для начинающих разработчиков."
+                description: "Проект представляет собой простой шаблонный сайт, созданный с использованием HTML и CSS. Проект предназначен для демонстрации базовой структуры и стилей веб-страницы, что может быть полезно для начинающих разработчиков."
             },
             en: {
-                desciption: "The project is a simple template website built using HTML and CSS. The project is intended to demonstrate the basic structure and styles of a web page, which may be useful for beginner developers."
+                description: "The project is a simple template website built using HTML and CSS. The project is intended to demonstrate the basic structure and styles of a web page, which may be useful for beginner developers."
             }
         },
     },
@@ -82,10 +82,10 @@ export const projects = [
         technologies: ["Javascript"],
         localesDescription: {
             ru: {
-                desciption: "Space Pong - это веб-игра, вдохновленная классической игрой Pong, но с современными элементами и улучшенной графикой. Проект использует технологии JavaScript и игровой движок Phaser"
+                description: "Space Pong - это веб-игра, вдохновленная классической игрой Pong, но с современными элементами и улучшенной графикой. Проект использует технологии JavaScript и игровой движок Phaser"
             },
             en: {
-                desciption: "Space Pong is a web game inspired by the classic game Pong, but with modern elements and improved graphics. The project uses JavaScript and the game engine Phaser"
+                description: "Space Pong is a web game inspired by the classic game Pong, but with modern elements and improved graphics. The project uses JavaScript and the game engine Phaser"
             }
         },
     },
