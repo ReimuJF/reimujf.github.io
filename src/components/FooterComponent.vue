@@ -11,8 +11,6 @@ import GitHub from "./logos/GitHubComponent.vue"
 </template>
 
 <style scoped>
-
-
 a,
 a:visited {
     color: white;
@@ -29,25 +27,31 @@ a:visited {
     height: 100%;
     justify-content: center;
     margin: 50px auto 0 auto;
+
 }
 
 .flex-link::after {
     content: "";
     position: absolute;
-    border-radius: 6px;
+    border-radius: 3px;
+    padding-right: 10px;
     z-index: -1;
     width: 100%;
     height: 2px;
     left: 0;
     bottom: 0;
-    background-color: #6a11cb;
-    transition: all ease .3s
+    background: rgb(135 70 206 / 72%);
+    box-shadow: none;
+    transition: all ease .3s;
+
 }
 
 .flex-link:hover {
     color: #fff
 }
-.flex-link:hover::after{
-    height: 102%;
+
+.flex-link:hover::after {
+    height: 105%;
+    box-shadow: 4px 3px 16px 12px rgb(161 138 186 / 72%);
 }
 </style>

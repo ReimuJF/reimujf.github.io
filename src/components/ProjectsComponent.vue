@@ -13,7 +13,7 @@ const props = defineProps(["locale", "language"]);
         <h2 class="big-font-size">Мои проекты</h2>
         <div class="projects-grid-table">
             <ProjectPreview class="project" v-for="project in projects" :key="project">
-                <img :src="project.img" alt="project_img">
+                <template v-slot:image-slot><img :src="project.img" :alt="project.img" class="preview-screenshot"></template>
                 <p class="big-font-size">
                     {{ project.title }}
                 </p>
@@ -44,12 +44,13 @@ const props = defineProps(["locale", "language"]);
     border: 1px solid rgba(107, 109, 164, 0.41);
 
 }
-
 .projects-grid-table {
     padding: 32px;
     display: grid;
     gap: 48px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 550px));
+    justify-content: center;
+    
 }
 @media screen and (max-width: 768px) {
     .projects-grid-table {

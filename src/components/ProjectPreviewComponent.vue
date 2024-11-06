@@ -1,5 +1,8 @@
 <template>
     <div class="project">
+        <div class="screenshot-container">
+            <slot name="image-slot"></slot>
+        </div>
         <slot></slot>
         <div class="tec-containter">
             <slot name="tecs-content"></slot>
@@ -20,18 +23,15 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.6px);
     -webkit-backdrop-filter: blur(11.6px);
-    border: 1px solid rgba(255, 255, 255, 0.52);
-    padding: 20px 0;
-    /* height: 200px; */
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    overflow: hidden;
 }
 
-.project .tec-containter {
+.tec-containter {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-items: start;
+    align-items: flex-end;
     margin-bottom: 15px;
     gap: 5px;
 }
@@ -44,7 +44,14 @@
     -webkit-backdrop-filter: blur(9.7px);
     border: 3px solid rgba(76, 175, 80, 0.38);
     padding: 10px;
+    margin-bottom: 20px;
 }
+
+.screenshot-container {
+    height: 450px;
+    width: 550px;
+}
+
 .project button:hover {
     background: rgba(72, 163, 75, 0.653);
 }
